@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/background.ts"],
+  "sourcesContent": ["chrome.runtime.onInstalled.addListener(() => {\n  console.log('IBM Bloch Inspector installed');\n});\n"],
+  "mappings": ";AAAA,OAAO,QAAQ,YAAY,YAAY,MAAM;AAC3C,UAAQ,IAAI,+BAA+B;AAC7C,CAAC;",
+  "names": []
+}

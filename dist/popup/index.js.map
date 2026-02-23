@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/popup/index.ts"],
+  "sourcesContent": ["const toggle = document.getElementById('toggle-enabled') as HTMLInputElement | null;\n\nasync function init() {\n  if (!toggle) {\n    return;\n  }\n\n  const { autoEnable } = await chrome.storage.sync.get({ autoEnable: true });\n  toggle.checked = autoEnable;\n\n  toggle.addEventListener('change', () => {\n    chrome.storage.sync.set({ autoEnable: toggle.checked });\n  });\n}\n\ndocument.addEventListener('DOMContentLoaded', init);\n"],
+  "mappings": ";AAAA,IAAM,SAAS,SAAS,eAAe,gBAAgB;AAEvD,eAAe,OAAO;AACpB,MAAI,CAAC,QAAQ;AACX;AAAA,EACF;AAEA,QAAM,EAAE,WAAW,IAAI,MAAM,OAAO,QAAQ,KAAK,IAAI,EAAE,YAAY,KAAK,CAAC;AACzE,SAAO,UAAU;AAEjB,SAAO,iBAAiB,UAAU,MAAM;AACtC,WAAO,QAAQ,KAAK,IAAI,EAAE,YAAY,OAAO,QAAQ,CAAC;AAAA,EACxD,CAAC;AACH;AAEA,SAAS,iBAAiB,oBAAoB,IAAI;",
+  "names": []
+}
