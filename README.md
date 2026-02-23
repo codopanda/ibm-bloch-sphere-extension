@@ -2,6 +2,8 @@
 
 Chrome extension that overlays Bloch-sphere visualisations for each qubit while you scrub through the Inspect view inside [IBM Quantum Composer](https://quantum.cloud.ibm.com/composer).
 
+![Bloch Inspector panel running inside IBM Quantum Composer](src/assets/demo.png)
+
 ## How it works
 
 - Injects a floating panel into the Composer canvas (runs in the page world, isolated through a Shadow DOM root so it will not clash with IBM styles).
